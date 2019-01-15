@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table, th, td {
+	border: 1px solid black;
+	text-align: center;
+}
+
+th {
+	font-family: "helvetica", sans-serif;
+	font-size: 20px;
+	color: white;
+	background-color: black;
+}
+
+td {
+	font-family: "helvetica", sans-serif;
+	background-color: darkgrey;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>About Me</title>
+</head>
+<body>
+	<form method="post" action="EchoServlet">
+	<table>
+		<tr>
+			<th>Email</th>
+			<th>Color</th>
+			<th>Age</th>
+			<th>Skills</th>
+		</tr>
+		<tr>
+			<td>
+				<input type="text" name="email" />
+			</td>
+			<td>
+				<select name="color">
+					<option value="Blue">Blue</option>
+					<option value="Green">Green</option>
+					<option value="Purple">Purple</option>
+					<option value="Red">Red</option>
+					<option value="Yellow">Yellow</option>
+				</select>
+			</td>
+			<td>
+				Child<input type="radio" name="age" value="Child" /><br>
+				Teen<input type="radio" name="age" value="Teen" /><br>
+				Adult<input type="radio" name="age" value="Adult" /><br>
+				Senior<input type="radio" name="age" value="Senior" /><br>
+			</td>
+			<td>
+				Java SE<input type="checkbox" name="skills" value="Java SE" /><br>
+				Java EE<input type="checkbox" name="skills" value="Java EE" /><br>
+				Java ME<input type="checkbox" name="skills" value="Java ME" /><br>
+			</td>
+		</tr>
+	</table>
+		<input type="submit" id="button" value="Submit This Data!" />
+	</form>
+</body>
+</html>
